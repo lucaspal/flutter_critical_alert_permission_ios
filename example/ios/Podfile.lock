@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_critical_alert_permission_ios (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_critical_alert_permission_ios (from `.symlinks/plugins/flutter_critical_alert_permission_ios/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_critical_alert_permission_ios:
+    :path: ".symlinks/plugins/flutter_critical_alert_permission_ios/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  flutter_critical_alert_permission_ios: 3b445233ade7436b79b33b409ac3b194b56c9222
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.10.0
