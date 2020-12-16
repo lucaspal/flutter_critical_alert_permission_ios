@@ -9,9 +9,7 @@ public class SwiftFlutterCriticalAlertPermissionIosPlugin: NSObject, FlutterPlug
   }
     
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
-    if ("getPlatformVersion".elementsEqual(call.method)) {
-        result("iOS " + UIDevice.current.systemVersion)
-    } else if ("requestCriticalAlertPermission".elementsEqual(call.method)) {
+    if ("requestCriticalAlertPermission".elementsEqual(call.method)) {
         if #available(iOS 10.0, *) {
             requestAuthorization(completion: nil)
         } else {
@@ -36,4 +34,12 @@ public class SwiftFlutterCriticalAlertPermissionIosPlugin: NSObject, FlutterPlug
            completion?(granted, error)
        }
    }
+
+// Does not compile yet.
+//   @available(iOS 10.0, *)
+//    func isCriticalPermissionEnabled() -> Bool {
+//        return UNUserNotificationCenter.current().getNotificationSettings(completion: (settings) {
+//            return settings.criticalAlertSetting == UNNotificationSetting.enabled
+//        })
+//    }
 }
