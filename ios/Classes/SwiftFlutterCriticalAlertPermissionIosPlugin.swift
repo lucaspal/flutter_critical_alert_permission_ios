@@ -30,9 +30,13 @@ public class SwiftFlutterCriticalAlertPermissionIosPlugin: NSObject, FlutterPlug
            options = [.alert, .badge, .sound]
        }
 
-       UNUserNotificationCenter.current().requestAuthorization(options: options) { (granted, error) in
-           completion?(granted, error)
-       }
+        do {
+            try UNUserNotificationCenter.current().requestAuthorization(options: options) { (granted, error) in
+                completion?(granted, error) }
+            } catch {
+                print("An error happened when requesting authorization.")
+            }
+
    }
 
 // Does not compile yet.
