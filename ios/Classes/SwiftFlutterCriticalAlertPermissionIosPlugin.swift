@@ -38,12 +38,4 @@ public class SwiftFlutterCriticalAlertPermissionIosPlugin: NSObject, FlutterPlug
             }
 
    }
-
-// Does not compile yet.
-//   @available(iOS 10.0, *)
-//    func isCriticalPermissionEnabled() -> Bool {
-//        return UNUserNotificationCenter.current().getNotificationSettings(completion: (settings) {
-//            return settings.criticalAlertSetting == UNNotificationSetting.enabled
-//        })
-//    }
 }
