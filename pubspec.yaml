@@ -1,11 +1,10 @@
 name: flutter_critical_alert_permission_ios
 description: Request critical alerts on iOS directly from Dart code.
-version: 0.0.2
-author: Luca Spalierno <spalierno@gmail.com>
+version: 0.1.0
 homepage: https://github.com/lucaspal/flutter_critical_alert_permission_ios.git
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: '>=2.12.0 <3.8.0'
   flutter: ">=1.20.0"
 
 dependencies:

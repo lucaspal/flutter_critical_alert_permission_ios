@@ -39,7 +39,7 @@ class _MyAppState extends State<MyApp> {
         body: Center(
           child: Column(
             children: [
-              RaisedButton(
+              TextButton(
                 onPressed: () => FlutterCriticalAlertPermissionIos.requestCriticalAlertPermission(),
                 child: Text('request critical alert permission'),
               )
